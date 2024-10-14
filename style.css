@@ -16,6 +16,8 @@ body{
 
 .row{
   display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 [class*="col-"] {
@@ -42,5 +44,5 @@ body{
 }
 
 .header{
-
+  height: 100px;
 }
