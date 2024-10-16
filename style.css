@@ -48,13 +48,18 @@ body{
   background-color: rgba(255, 255, 255, 0.75);
 }
 
+.logo{
+  margin-top: 7px;
+}
+
 .menu{
   display: flex;
 }
 
-.menu li{
+.menu li {
   width: 25%;
   border-left: 1px solid #2c71b8;
+  padding-left: 25px;
 }
 .menu li:last-child{
 border-right: 1px solid #2c71b8;
@@ -68,6 +73,10 @@ border-right: 1px solid #2c71b8;
   align-items: center;
   font-size: 21px;
   color: #2c71b8;
+}
+
+a{
+  text-decoration: none;
 }
 
 .menu a:hover {
