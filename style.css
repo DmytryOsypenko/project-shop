@@ -124,14 +124,15 @@ body{
   width: 25%;
   border-left: 1px solid #2c71b8;
   padding-left: 25px;
+  position: relative;
 }
 .menu li:last-child{
 border-right: 1px solid #2c71b8;
 }
 
 .manu a{
-  display: flex;
-  height: 50px;
+  display: block;
+  line-height: 50px;
   text-decoration: none;
   justify-content: center;
   align-items: center;
@@ -139,24 +140,29 @@ border-right: 1px solid #2c71b8;
   color: #2c71b8;
 }
 
+
+
 .menu ul{
   display: none;
   position: absolute;
   background-color: #369;
   margin-top: 10px;
   margin-left: -10px;
+  position: absolute;
 }
 
 .menu li:hover ul{
   display: block;
+  
 }
 .menu2{
   width: 284px;
-  height: 70px;
+  height: 367px;
 }
 
 a{
   text-decoration: none;
+  color: #2c71b8;
   width: 100%;
   text-align: justify;
 }
