@@ -139,9 +139,26 @@ border-right: 1px solid #2c71b8;
   color: #2c71b8;
 }
 
+.menu ul{
+  display: none;
+  position: absolute;
+  background-color: #369;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.menu li:hover ul{
+  display: block;
+}
+.menu2{
+  width: 284px;
+  height: 70px;
+}
+
 a{
   text-decoration: none;
-  height: 50px;
+  width: 100%;
+  text-align: justify;
 }
 
 .menu a:hover {
