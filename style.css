@@ -33,6 +33,7 @@ body{
   max-width: 25%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .col-6{
@@ -54,8 +55,9 @@ body{
 }
 
 
-.menu a{
-  display: block;
+.menu a{ 
+  position: relative;
+  display: inline-block;
   height: 50px;
   text-decoration: none;
   font-size: 21px;
@@ -90,3 +92,66 @@ body{
   background-position: center;
   margin: -12px;
 }
+
+.formas{
+  width: 40px;
+  height: 40px;
+  background-color: #2c71b7;
+}
+button{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url(img/icon\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nomberS{
+  background-color: #2c71b8;
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 9px;
+  text-align: center;
+  position: relative;
+  top: -57px;
+  right: 11px;
+}
+.menuDown li{
+  width: 285px;
+  height: 37px;
+  background-color: #2c71b8;
+}
+
+.menuDown a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 21px;
+  background-color: #2c71b7;
+}
+
+.menuDown{
+  display: none;
+  position: absolute;
+  }
+
+  .menu li a:hover {
+    background-color: #2c71b7;
+    display: block;
+    color: #ffffff;
+    }
+
+
+.menu li:hover .menuDown {
+  display: block;
+}
+.menuDown:hover  li a{
+  background-color: #ffffff;
+  color: #2c71b7;
+}
+
+/* .menuDown:hover  a{
+  color: #2c71b7;
+} */
+
