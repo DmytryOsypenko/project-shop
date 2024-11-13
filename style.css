@@ -5,6 +5,7 @@
 body{
   font-family: 'roboto', sans-serif;
   background-image: url(img/patt.png);
+  overflow-x: hidden;
 }
 .container {
   width: 1200px;
@@ -124,38 +125,67 @@ button{
   top: -57px;
   right: 11px;
 }
-.menuDown li{
-  width: 285px;
-  height: 37px;
-  background-color: #2c71b8;
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
-.menuDown a{
+.menu > li {
+  position: relative;
+  
+}
+
+.menu a {
   text-decoration: none;
-  color: #ffffff;
+  display: block;
+  padding: 10px 20px;
+  color: #2c71b8;
   font-size: 21px;
-  background-color: #2c71b7;
 }
 
-.menuDown{
+.menu  :hover a {
+  background-color: #2c71b8;
+  color: #ffffff;
+}
+
+/* Стилі для випадаючого меню */
+.menuDown {
   display: none;
   position: absolute;
-  }
+  top: 100%; /* З'являється під головним пунктом меню */
+  left: 0;
+  background-color: #2c71b7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 285px; /* Ширина випадаючого меню */
+  z-index: 10;
+}
 
-  .menu li a:hover {
-    background-color: #2c71b7;
-    display: block;
-    color: #ffffff;
-    }
+.menuDown li {
+  /* border-bottom: 1px solid #ffffff; */
+  width: 285px;
+}
 
+.menuDown a {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #2c71b7;
+  font-size: 16px;
+}
 
-.menu li:hover .menuDown {
+/* Стилі для ефекту при наведенні */
+.menuDown a:hover {
+  background-color: #96b8dc;
+}
+
+/* Показувати випадаюче меню при наведенні на головний пункт */
+.menu > li:hover .menuDown {
   display: block;
 }
-.menuDown:hover  li a{
-  background-color: rgba(255, 255, 255, 0.75);
-  color: #2c71b8;
-}
+
 
 /* .menuDown:hover  a{
   color: #2c71b7;
@@ -177,10 +207,105 @@ button{
 .divaseCenter{
   width: 900px;
   height: 2337px;
-  background-color: #9cb6d354;;
+  background-color: #9cb6d354;
+  display: flex;
+  flex-direction: column;
 }
 
 .main .row{
   justify-content: space-evenly
 }
 
+.home ul li{
+  position: relative;
+  float: left;
+  font-size: 14px;
+  
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.home ul li a {
+  text-decoration: none;
+  color: #96b8dc;;
+}
+.home ul li span{
+  margin: 0;
+}
+
+.LeptopsText{
+  font-size: 48px;
+  font-weight: bold;
+  /* margin-top: 30px;
+  margin-left: 30px; */
+}
+
+.Laptops{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 15px;
+  margin-top: 30px;
+  color: white;
+}
+
+.icon-down{
+  background-image: url(img/icon-down2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5%;
+  top: 20%;
+}
+
+.price{
+  list-style: none;
+  position: relative;
+  
+
+}
+
+.price > li {
+  display: inline-block;
+  position: relative;
+  width:270px;
+  height: 40px;
+  background-color: none;
+  border: solid 1px white;
+}
+
+.price a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+ .submenu-prises {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2c71b7;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 270px;
+ }
+
+ .submenu-prises li {
+  padding: 10px;
+}
+
+.submenu-prises li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.submenu-prises li a:hover {
+  background-color: #96b8dc;
+}
+ .price > li:hover .submenu-prises {
+  display: block;
+ }
