@@ -359,12 +359,94 @@ button{
 
 .imgCenter:hover {
   border:  1px solid #ffffff;;
+  background-color: #96b8dc;
 }
 
 .IconImg1:hover {
   border:  1px solid #ffffff;
+  background-color: #96b8dc;
 }
 
 .IconImg2:hover {
   border:  1px solid #ffffff;
+  background-color: #96b8dc;
+}
+
+.content1{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.DN {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.Ltext {
+  color: white;
+  font-size: 19px;
+  font-weight: lighter;
+  color: white;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+span {
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.dollars {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.coin {
+  font-size: 24px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.btnConteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+.btn1Prise {
+  width: 210px;
+  height: 53px;
+  border: 1px solid white;
+  margin: 15px;
+  padding: 15px;
+}
+
+.btn2Prise {
+  width: 210px;
+  height: 53px;
+  background-color: #568dc6;
+  border: 1px solid #568dc6;
+  padding: 15px;
+}
+
+.btn1Prise:hover {
+  background-color: #96b8dc;
+}
+
+.btn2Prise:hover {
+  background-color: #96b8dc;
 }
