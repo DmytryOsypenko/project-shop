@@ -450,3 +450,11 @@ span {
 .btn2Prise:hover {
   background-color: #96b8dc;
 }
+
+.Device{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-left: 30px;
+  justify-content: space-around;
+}
