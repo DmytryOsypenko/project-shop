@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <title>Shop project</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
@@ -65,14 +68,19 @@
       </div>
       </header>
       <!-- --Slider-- -->
-      <div class="slayder">
+      <div class="slayder-block">
         <div class="row">
+          <div class="slider">
+            <div>Slaider1</div>
+            <div>Slaider2</div>
+            <div>Slaider3</div>
+          </div>
 
         </div>
       </div>
       
       <!-- main -->
-   <main class="main">Main
+   <main class="main">
     <div class="row">
       <div class="aSite"> 
         <div class="Colum">
@@ -359,7 +367,7 @@
     
     </main>
    <footer class="footer">Footer</footer>
-      <div class="modal">
+      <div class="modal hide">
         <div class="modal-block">
             <form action="">
                 <div class="btn-close">X</div>
@@ -374,10 +382,11 @@
             </form>
         </div>
     </div>
-   
 
-
-   <script src="app.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
   
 </body>
 </html>

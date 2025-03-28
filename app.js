@@ -12,10 +12,40 @@ addToCartBtns.forEach((btn) =>
 );
 // change like button state
 let likeBtns = document.querySelectorAll(".IconImg2");
-console.log(likeBtns);
+// console.log(likeBtns);
 
 likeBtns.forEach((btn) =>
   btn.addEventListener("click", function () {
     btn.classList.toggle("liked");
   })
 );
+
+// model more detals
+
+let moreDetailsBtns = document.querySelectorAll(".btn1Prise");
+let modal = document.querySelector(".modal");
+let btnClose = document.querySelector(".btn-close");
+
+function openModal() {
+  modal.classList.remove("hide");
+  modal.classList.add("show");
+}
+
+function closeModal() {
+  modal.classList.add("hide");
+  modal.classList.remove("show");
+}
+
+moreDetailsBtns.forEach((item) => item.addEventListener("click", openModal));
+
+btnClose.addEventListener("click", closeModal);
+
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+// slider slick
+
+$(".slider").slick();
