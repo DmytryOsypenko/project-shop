@@ -513,3 +513,19 @@ span {
 .show {
   display: block;
 }
+
+/* .cont-slider{
+
+} */
+
+.slider div {
+  text-align: center;
+}
+.slider img {
+  width: 60%;
+  height: 300px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+  
+}
