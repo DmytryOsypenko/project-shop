@@ -59,3 +59,44 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
   });
 });
+
+let decrementBtns = document.querySelectorAll(".decrement-button")[0];
+let incrementBtns = document.querySelectorAll(".increment-button")[0];
+let inputFields = document.querySelectorAll(".product-qantity input")[0];
+
+function Counter(incrementBtns, decrementBtns, inputFields) {
+  this.domRefs = {
+    incrementBtns,
+    decrementBtns,
+    inputFields,
+  };
+
+  this.increment = function () {
+    console.log(this);
+    this.domRefs.inputFields.value = +this.domRefs.inputFields.value + 1;
+  };
+  this.decrement = function () {
+    this.domRefs.inputFields.value = +this.domRefs.inputFields.value - 1;
+    this.toggleButtonState();
+  };
+
+  this.toggleButtonState = function () {
+    let count = this.domRefs.inputFields.value;
+    this.domRefs.decrementBtns.disabled = count <= 1;
+    this.domRefs.incrementBtns.disabled = count >= 10;
+  };
+
+  this.domRefs.incrementBtns.addEventListener(
+    "click",
+    this.increment.bind(this)
+  );
+  this.domRefs.decrementBtns.addEventListener(
+    "click",
+    this.decrement.bind(this)
+  );
+
+  this.toggleButtonState();
+}
+
+let counter1 = new Counter(incrementBtns, decrementBtns, inputFields);
+console.log(counter1);
